@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skandesan - Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 Skandesan</h1>
+            <p>Classic Snake Game</p>
+        </header>
+
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score">
+                    <span class="label">Score:</span>
+                    <span class="value" id="score">0</span>
+                </div>
+                <div class="high-score">
+                    <span class="label">High Score:</span>
+                    <span class="value" id="highScore">0</span>
+                </div>
+            </div>
+            <div class="status" id="status">Ready to play!</div>
+        </div>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="controls">
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Use <strong>Arrow Keys</strong> to move the snake</li>
+                    <li>Eat the red food to grow and score points</li>
+                    <li>Avoid hitting walls and yourself</li>
+                    <li>Press <strong>Space</strong> to pause/resume</li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <button id="startBtn" class="btn btn-primary">Start Game</button>
+                <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+                <button id="resetBtn" class="btn btn-secondary">Reset</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Skandesan Snake Game | Made with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
